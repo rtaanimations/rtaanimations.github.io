@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>RTA Animations — Recommended Gear</title>
+    <meta name="description" content="Curated VTT and creator gear with clear affiliate disclosures." />
+    <link rel="canonical" href="https://YOURUSERNAME.github.io/gear.html" />
+    <meta property="og:title" content="RTA Animations — Recommended Gear">
+    <meta property="og:description" content="Curated VTT and creator gear with clear affiliate disclosures.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://YOURUSERNAME.github.io/gear.html">
+    <meta name="twitter:card" content="summary">
+    <link rel="stylesheet" href="/styles.css" />
+    <script src="/config.js"></script>
+    <script defer src="/script.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="/index.html">Home</a>
+        <a href="/gear.html">Recommended Gear</a>
+        <a href="/disclosures.html">Disclosures</a>
+        <a href="/privacy.html">Privacy</a>
+        <a href="/about.html">About</a>
+      </nav>
+      <div class="disclosure small" data-assoc>As an Amazon Associate I earn from qualifying purchases.</div>
+    </header>
+    <main class="container">
+      
+<h1>Recommended Gear</h1>
+<p class="small">Below are Amazon affiliate links. <em>As an Amazon Associate I earn from qualifying purchases.</em></p>
+<hr/>
+<section class="grid grid-3" id="gearGrid"></section>
+<script>
+  const data = [
+    {"title":"Quiet Mechanical Keyboard","img":"/assets/placeholder.png","href":"https://www.amazon.com/dp/B000003","blurb":"Tactile, damped, low profile."},
+    {"title":"Art Pen Display","img":"/assets/placeholder.png","href":"https://www.amazon.com/dp/B000004","blurb":"Color-accurate and reliable."},
+    {"title":"LED Soft Panel","img":"/assets/placeholder.png","href":"https://www.amazon.com/dp/B000005","blurb":"Diffused, flicker-free light."}
+  ];
+  const grid = document.getElementById('gearGrid');
+  data.forEach(item => {
+    const card = document.createElement('article');
+    card.className = 'card';
+    card.innerHTML = `
+      <figure><img src="${item.img}" alt="${item.title}"/></figure>
+      <h3>${item.title}</h3>
+      <p>${item.blurb}</p>
+      <p><a data-affiliate="true" href="${item.href}">Amazon link</a></p>
+    `;
+    grid.appendChild(card);
+  });
+</script>
+
+    </main>
+    <footer>
+      <div>© 2025 <span data-site-name>RTA Animations</span>.</div>
+      <div class="disclosure" data-assoc>As an Amazon Associate I earn from qualifying purchases.</div>
+    </footer>
+  </body>
+</html>
