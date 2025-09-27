@@ -3,6 +3,6 @@ window.SITE_CONFIG = {
   TAG: "rtaanimations-20",
   SITE_NAME: "RTA Animations",
   TAGLINE: "Practical picks for VTT & tabletop creators.",
-  CANONICAL_BASE: "https://YOURUSERNAME.github.io",
+  CANONICAL_BASE: "https://rtaanimations.github.io",
   ACCENT: "#66fcf1"
 };
